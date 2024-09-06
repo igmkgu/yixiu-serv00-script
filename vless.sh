@@ -2,6 +2,7 @@
 
 # Function to check if pm2 is installed
 check_pm2_installed() {
+    cd ~/domains/$USER.serv00.net/vless && ./check_vless.sh
     if command -v pm2 &>/dev/null; then
         return 0  # pm2已安装
     else
